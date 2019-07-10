@@ -1,0 +1,4 @@
+﻿cron:
+- description: "generate pubsub message"
+  url: /Home/Messages
+  schedule: every 1 mins
