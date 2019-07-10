@@ -27,7 +27,7 @@ namespace Pubsub.Controllers
         public string Messages()
         {
             Random r = new Random();
-            int messageAmount = r.Next(1, 3);
+            int messageAmount = r.Next(1, 5);
             for (int l = 0; l < messageAmount; l++)
             {
                 var pubsubMessage = new PubsubMessage()
@@ -41,7 +41,7 @@ namespace Pubsub.Controllers
             totalCronCount = totalCronCount + 1;
             messageCount = messageCount + messageAmount;
 
-            return "example";
+            return "messages sent";
         }
         
         [HttpGet]
